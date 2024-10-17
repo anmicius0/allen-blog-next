@@ -2,22 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MiSans";
+  src: url("/fonts/MiSans Latin VF.ttf") format("truetype-variations");
+  font-weight: 100 900; /* Adjust weight range as needed */
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  font-family:
+    "MiSans" Helvetica,
+    sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
